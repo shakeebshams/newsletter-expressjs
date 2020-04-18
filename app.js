@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const request = require("request");
 const https = require('https');
 
-const apiKey = 'af3085633295b8a2906cb3dcf86e1495-us4';
+const stuff = 'af3085633295b8a2906cb3dcf86e1495-us4';
 const listID = '6204289ec1';
 
 app.use(express.static("public/"));
@@ -38,7 +38,7 @@ app.post('/', function(req, res) {
 
     var options = {
         method: 'POST',
-        auth: 'sshams:' + apiKey
+        auth: 'sshams:' + stuff
     }
 
     const request = https.request(url, options, function(response) {
